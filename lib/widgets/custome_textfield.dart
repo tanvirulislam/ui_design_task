@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
-Widget customeTextField({required String hintText, required bool obscureText}) {
+Widget customeTextField({
+  required String hintText,
+  required bool obscureText,
+  required TextEditingController controller,
+}) {
   return Padding(
     padding: const EdgeInsets.only(bottom: 12),
     child: TextFormField(

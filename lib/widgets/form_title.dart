@@ -13,3 +13,30 @@ Widget formTitle({required String titel}) {
     ),
   );
 }
+
+Widget customeTitle({
+  required String titel,
+  required double fontsize,
+}) {
+  return Text(
+    titel,
+    style: TextStyle(
+      color: Color(0xFF1F2937),
+      fontSize: fontsize,
+      fontWeight: FontWeight.w500,
+    ),
+  );
+}
+
+Widget customeSubTitle({
+  required String subtitle,
+  required double fontsize,
+}) {
+  return Text(
+    subtitle,
+    style: TextStyle(
+      color: Color(0xFF6B7280),
+      fontSize: fontsize,
+    ),
+  );
+}

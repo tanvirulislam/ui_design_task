@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_design_task/screens/bottomNavScrren/home.dart';
 import 'package:ui_design_task/screens/on_oarding_screen.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: OnBoarding(),
+      // home: Home(),
     );
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:ui_design_task/const.dart';
 import 'package:ui_design_task/screens/forget_password/success.dart';
-import 'package:ui_design_task/screens/home.dart';
+import 'package:ui_design_task/screens/bottomNavScrren/home.dart';
 import 'package:ui_design_task/widgets/custome_button.dart';
 import 'package:ui_design_task/widgets/custome_textfield.dart';
 import 'package:ui_design_task/widgets/form_title.dart';
@@ -13,6 +13,7 @@ class ForgetPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    TextEditingController emailController = TextEditingController();
 
     return SafeArea(
       child: Scaffold(
@@ -44,7 +45,9 @@ class ForgetPassword extends StatelessWidget {
                 SizedBox(height: size.height / 9),
                 formTitle(titel: 'Email Address'),
                 customeTextField(
-                    hintText: 'Eg namaemail@emailkamu.com', obscureText: false),
+                    controller: emailController,
+                    hintText: 'Eg namaemail@emailkamu.com',
+                    obscureText: false),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 17),
                   child: Row(

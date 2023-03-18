@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:ui_design_task/const.dart';
+import 'package:ui_design_task/screens/bottomNavScrren/home.dart';
+import 'package:ui_design_task/screens/bottom_nav_controller.dart';
 import 'package:ui_design_task/widgets/custome_button.dart';
 import 'package:ui_design_task/widgets/custome_textfield.dart';
 import 'package:ui_design_task/widgets/form_title.dart';
 
-Widget CreateAccount() {
+Widget CreateAccount(BuildContext context) {
+  TextEditingController nameController = TextEditingController();
+
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
     child: SingleChildScrollView(
@@ -13,16 +20,31 @@ Widget CreateAccount() {
         children: [
           formTitle(titel: 'Full Name'),
           customeTextField(
-              hintText: 'Enter your full name', obscureText: false),
+              controller: nameController,
+              hintText: 'Enter your full name',
+              obscureText: false),
           formTitle(titel: 'Email Address'),
           customeTextField(
-              hintText: 'Eg namaemail@emailkamu.com', obscureText: false),
+              controller: emailController,
+              hintText: 'Eg namaemail@emailkamu.com',
+              obscureText: false),
           formTitle(titel: 'Password'),
-          customeTextField(hintText: '**** **** ****', obscureText: true),
+          customeTextField(
+              controller: passwordController,
+              hintText: '**** **** ****',
+              obscureText: true),
           SizedBox(height: 20),
           Center(
             child: CustomeButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  PageTransition(
+                    child: BottomNavController(),
+                    type: PageTransitionType.fade,
+                  ),
+                );
+              },
               title: 'Ragistration',
               primary: primaryColor,
               onPrimary: Colors.white,

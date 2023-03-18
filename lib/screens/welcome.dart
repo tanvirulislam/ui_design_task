@@ -60,7 +60,7 @@ class Welcome extends StatelessWidget {
                             body: TabBarView(
                               // physics: NeverScrollableScrollPhysics(),
                               children: [
-                                CreateAccount(),
+                                CreateAccount(context),
                                 Login(context),
                               ],
                             ),
@@ -117,7 +117,7 @@ class Welcome extends StatelessWidget {
                             body: TabBarView(
                               // physics: NeverScrollableScrollPhysics(),
                               children: [
-                                CreateAccount(),
+                                CreateAccount(context),
                                 Login(context),
                               ],
                             ),
