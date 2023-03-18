@@ -15,12 +15,15 @@ class Welcome extends StatelessWidget {
         backgroundColor: Colors.white,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            onBoarding(
-              image: 'assets/images/welcome.png',
-              title: 'Welcome',
-              description:
-                  'Before enjoying Foodmedia services Please register first',
+            Center(
+              child: onBoarding(
+                image: 'assets/images/welcome.png',
+                title: 'Welcome',
+                description:
+                    'Before enjoying Foodmedia services Please register first',
+              ),
             ),
             SizedBox(height: 40),
             ConstrainedBox(

@@ -12,12 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'UI Task Design',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: OnBoarding(),
-      // home: Home(),
     );
   }
 }

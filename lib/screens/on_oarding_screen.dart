@@ -34,19 +34,19 @@ class _OnBoardingState extends State<OnBoarding> {
                   image: 'assets/images/page1.png',
                   title: 'Nearby restaurants',
                   description:
-                      "You don't have to go far to find a good restaurant, we have provided all the restaurants that is near you",
+                      "You don't have to go far to find a good restaurant, we have provided all the restaurants that is\n near you",
                 ),
                 onBoarding(
                   image: 'assets/images/page2.png',
                   title: 'Select the Favorites Menu',
                   description:
-                      "Now eat well, don't leave the house,You can choose your favorite food only with one click",
+                      "Now eat well, don't leave the house,You can choose your favorite food only with \n one click",
                 ),
                 onBoarding(
                   image: 'assets/images/page3.png',
                   title: 'Good food at a cheap price',
                   description:
-                      "You can eat at expensive restaurants with affordable price",
+                      "You can eat at expensive restaurants with affordable price \n",
                 ),
               ],
             ),
