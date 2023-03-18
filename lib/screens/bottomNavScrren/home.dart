@@ -122,17 +122,15 @@ class Home extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                 ),
               ),
-              SizedBox(height: 18),
-              Image.asset('assets/images/indicator.png'),
               SizedBox(height: 36),
               SizedBox(
                 width: 341,
                 height: 38,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      width: 217,
+                      // width: 217,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -145,12 +143,22 @@ class Home extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(width: 60),
+                    SizedBox(width: 20),
                     TextButton(
                       onPressed: () {},
-                      child: Text(
-                        'See All',
-                        style: TextStyle(color: Color(0xFF6B7280)),
+                      child: Row(
+                        children: [
+                          Text(
+                            'See All',
+                            style: TextStyle(
+                              color: Color(0xFF6B7280),
+                            ),
+                          ),
+                          Icon(
+                            Icons.keyboard_arrow_right,
+                            color: Color(0xFF6B7280),
+                          )
+                        ],
                       ),
                     ),
                   ],
@@ -275,10 +283,10 @@ class Home extends StatelessWidget {
                 width: 341,
                 height: 38,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      width: 217,
+                      // width: 217,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -291,12 +299,22 @@ class Home extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(width: 60),
+                    SizedBox(width: 20),
                     TextButton(
                       onPressed: () {},
-                      child: Text(
-                        'See All',
-                        style: TextStyle(color: Color(0xFF6B7280)),
+                      child: Row(
+                        children: [
+                          Text(
+                            'See All',
+                            style: TextStyle(
+                              color: Color(0xFF6B7280),
+                            ),
+                          ),
+                          Icon(
+                            Icons.keyboard_arrow_right,
+                            color: Color(0xFF6B7280),
+                          )
+                        ],
                       ),
                     ),
                   ],

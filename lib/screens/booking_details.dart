@@ -159,12 +159,22 @@ class BookingDetails extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            // SizedBox(width: 60),
+                            SizedBox(width: 15),
                             TextButton(
                               onPressed: () {},
-                              child: Text(
-                                'See All',
-                                style: TextStyle(color: Color(0xFF6B7280)),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    'See All',
+                                    style: TextStyle(
+                                      color: Color(0xFF6B7280),
+                                    ),
+                                  ),
+                                  Icon(
+                                    Icons.keyboard_arrow_right,
+                                    color: Color(0xFF6B7280),
+                                  )
+                                ],
                               ),
                             ),
                           ],

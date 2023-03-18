@@ -61,15 +61,7 @@ class Success extends StatelessWidget {
               SizedBox(height: size.height / 4),
               Center(
                 child: CustomeButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      PageTransition(
-                        child: Success(),
-                        type: PageTransitionType.fade,
-                      ),
-                    );
-                  },
+                  onPressed: () {},
                   title: 'Back email',
                   primary: primaryColor,
                   onPrimary: Colors.white,

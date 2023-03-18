@@ -51,7 +51,7 @@ class _BottomNavControllerState extends State<BottomNavController> {
               ),
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.book_online,
+                  Icons.calendar_today_outlined,
                 ),
                 label: 'Booking',
               ),

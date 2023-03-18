@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:ui_design_task/const.dart';
+import 'package:ui_design_task/screens/bottom_nav_controller.dart';
 import 'package:ui_design_task/screens/forget_password/froget_password.dart';
 import 'package:ui_design_task/widgets/custome_button.dart';
 import 'package:ui_design_task/widgets/custome_textfield.dart';
@@ -32,7 +33,9 @@ Widget Login(BuildContext context) {
                 Navigator.push(
                   context,
                   PageTransition(
-                      child: ForgetPassword(), type: PageTransitionType.fade),
+                    child: ForgetPassword(),
+                    type: PageTransitionType.fade,
+                  ),
                 );
               },
               child: Text(
@@ -44,7 +47,15 @@ Widget Login(BuildContext context) {
           SizedBox(height: 20),
           Center(
             child: CustomeButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  PageTransition(
+                    child: BottomNavController(),
+                    type: PageTransitionType.fade,
+                  ),
+                );
+              },
               title: 'Ragistration',
               primary: primaryColor,
               onPrimary: Colors.white,
@@ -63,7 +74,15 @@ Widget Login(BuildContext context) {
                 minHeight: 51,
               ),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    PageTransition(
+                      child: BottomNavController(),
+                      type: PageTransitionType.fade,
+                    ),
+                  );
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

@@ -63,7 +63,15 @@ Widget CreateAccount(BuildContext context) {
                 minHeight: 51,
               ),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    PageTransition(
+                      child: BottomNavController(),
+                      type: PageTransitionType.fade,
+                    ),
+                  );
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
